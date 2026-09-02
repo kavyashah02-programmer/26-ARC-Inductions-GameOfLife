@@ -165,7 +165,7 @@ def main():
     COLS = 35
     TICK_SPEED = 0.1
     #---------------------------- 
-    SEED_TYPE = 'random' #glider/blinker/pulsar (default: random)
+    SEED_TYPE = 'blinker' #glider/blinker/pulsar (default: random)
     #---------------------------- 
     
     grid = get_seed(SEED_TYPE, ROWS, COLS)
@@ -202,7 +202,7 @@ def main():
                 
             time.sleep(0.03)
             
-    except KeyboardInterrupt:
+    except KeyboardInterrupt:  
         pass
     except Exception as e:
         print(f"\n\033[91m[!] An error occurred during simulation:\033[0m")
